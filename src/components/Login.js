@@ -30,7 +30,8 @@ export default class Login extends React.Component {
       data: JSON.stringify(this.state),
       cache: false,
       success: (data) => {
-        this.props.onLoginSuccess(data.token);
+        //this.props.onLoginSuccess(data.token);
+        console.log(data.token);
       },
       error: (xhr, status, err) => {
         console.error("Error", status, err.toString());

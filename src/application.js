@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import Router from 'react-router';
 import Routes from './routes';
 
-import createHistory from 'history/lib/createBrowserHistory'
+import { createHistory } from 'history'
 
-let history = createHistory();
+const history = createHistory()
 
 var app = document.getElementById('app');
 
