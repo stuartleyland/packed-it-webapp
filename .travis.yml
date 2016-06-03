@@ -6,7 +6,7 @@ services:
   - docker
 
 script:
-  npm build
+  npm run build
 
 after_success:
   docker build -t packedit/packed-it-webapp .
