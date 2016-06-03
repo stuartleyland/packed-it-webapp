@@ -23,7 +23,7 @@ export default class Login extends React.Component {
     event.preventDefault();
 
     $.ajax({
-      url: "http://0.0.0.0:8080/auth",
+      url: "http://ec2-54-194-82-3.eu-west-1.compute.amazonaws.com:8080/auth",
       contentType: 'application/json',
       dataType: 'json',
       type: 'POST',
