@@ -8,6 +8,6 @@ services:
 script: npm run build
 
 after_success:
-  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker login -e $DOCKER_EMAIL -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
   - docker build -t packedit/packed-it-webapp .
   - docker push packedit/packed-it-webapp
